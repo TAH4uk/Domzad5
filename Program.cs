@@ -92,9 +92,12 @@ int comp = 0;
 
 for (int i = 0; i < numbers.Length; i++)
 {
-    comp = comp + numbers[i];
+    if(i % 2 == 0)
+    {
+        comp = numbers[i] * numbers[size-1];
+    }
 }
-    Console.WriteLine($"Сумма элементов на нечётных позициях полученного массива - {sum}");
+    Console.WriteLine($"Произведение пар чисел - {comp}");
 
 void ArrayRandomNum(int[] numbers)
 {
