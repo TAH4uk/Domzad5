@@ -89,7 +89,7 @@ Console.WriteLine("Полученный массив: ");
 OutputArray(numbers);
 
 int comp = 0;
-// 
+ 
 for (int i = 0; i < numbers.Length;  i++)
 {
     if(i < size / 2)
